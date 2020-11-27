@@ -7,4 +7,4 @@ The system consists of:
 * Products
 * Orders
 
-![Alt](/ERD.png "Title")
+![ERD](https://github.com/FerFilho23/KaffaTests/blob/main/Exercise8/ERD.png)
