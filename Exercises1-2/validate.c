@@ -105,7 +105,7 @@ int validate_digits(char CNPJ[]){
 
         if (digit1 != (CNPJ[16] - '0') || digit2 != (CNPJ[17] - '0'))
         {
-           printf("AUTHENTICATION ERROR: invalid CNPJ\n");
+           printf("AUTHENTICATION ERROR: invalid authentication digits\n");
            return 0;
         }
     }
