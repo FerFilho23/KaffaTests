@@ -13,9 +13,9 @@ int validate_format(char CNPJ[]){
     }
     else if (strlen(CNPJ) == MIN)    //Check for Numbers only
     {
-        while (i < MIN) {       //Search for letters
+        while (i < MIN) {       //Search for invalid character
             if (CNPJ[i] < 48 || CNPJ[i]> 57){     
-                printf("FORMAT ERROR: letter found\n");
+                printf("FORMAT ERROR: invalid character found\n");
                 return 0;
             }
             i++;
@@ -30,10 +30,10 @@ int validate_format(char CNPJ[]){
             printf("FORMAT ERROR: invalid separation characters\n");
             return 0;        
         }
-        while (i < MAX) {   //Search for letters
+        while (i < MAX) {   //Search for invalid character
             if(i != 2 && i != 6 && i != 10 && i != 15){
                 if (CNPJ[i] < 48 || CNPJ[i]> 57){     
-                    printf("FORMAT ERROR: letter found\n");
+                    printf("FORMAT ERROR: invalid character found\n");
                     return 0;
                 }    
             }
