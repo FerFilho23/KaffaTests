@@ -6,7 +6,22 @@ This program contains the answer to both exercise 1 and 2. The structure consist
 * cnpj.c -  wich contains the main code of the program.
 * Makefile - contais the script for compiling the program
 ----------------------------------------------------------------------------------------------------------------------
+## Compilation & Execution
 
+Follow the next setps and copy/paste the commands below to the Terminal:
+
+1.  Clone the repository
+      
+      $  cd git clone https://github.com/FerFilho23/KaffaTests.git
+   
+2.  Go to the KaffaTests repository and enter the "Exercise1-2" folder
+      
+      $ KaffaTests/Exercises1-2/
+
+3.  Compile & Execute
+
+      $ make CNPJ
+      
 ### Exercise 1: Validate a CNPJ Format.
 
 Given a string, check if it looks like a CNPJ, considering two formats:
