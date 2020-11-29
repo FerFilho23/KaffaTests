@@ -10,7 +10,8 @@ int validate_format(char CNPJ[]){
     if (strlen(CNPJ) != MIN && strlen(CNPJ) != MAX) //The CNPJ doesn't have the 14 or 18 digits necessary for a valid format
     {
        printf("FORMAT ERROR: invalid size\n");
-    }else if (strlen(CNPJ) == MIN)    //Check for Numbers only
+    }
+    else if (strlen(CNPJ) == MIN)    //Check for Numbers only
     {
         while (i < MIN) {       //Search for letters
             if (CNPJ[i] < 48 || CNPJ[i]> 57){     
@@ -21,7 +22,8 @@ int validate_format(char CNPJ[]){
         }
         return 1;
 
-    }else if (strlen(CNPJ) == MAX) //Check for Formatted
+    }
+    else if (strlen(CNPJ) == MAX) //Check for Formatted
     {
         i = 0;
         if (CNPJ[2] != '.' || CNPJ[6] != '.' || CNPJ[10] != '/' || CNPJ[15] != '-'){ // "00.000.000/0000-00" check for the 4 separation characters 
@@ -72,11 +74,12 @@ int validate_digits(char CNPJ[]){
 
         if (digit1 != (CNPJ[12] - '0') || digit2 != (CNPJ[13] - '0'))
         {
-           printf("AUTHENTICATION ERROR: invalid CNPJ\n");
+           printf("AUTHENTICATION ERROR: invalid authentication digits\n");
            return 0;
         }
 
-    }else if (strlen(CNPJ) == MAX) //Formatted
+    }
+    else if (strlen(CNPJ) == MAX) //Formatted
     {
         //Sum of the digits with its weights - convert digit char CNPJ[i] to int - ignore separation characters
         sum1 = (((CNPJ[0]-'0') * 5) + ((CNPJ[1]-'0') * 4) + ((CNPJ[3]-'0') * 3) + ((CNPJ[4]-'0') * 2) + ((CNPJ[5]-'0') * 9) + ((CNPJ[7]-'0') * 8) + ((CNPJ[8]-'0') * 7) + ((CNPJ[9]-'0') * 6) + ((CNPJ[11]-'0') * 5) + ((CNPJ[12]-'0') * 4) + ((CNPJ[13]-'0') * 3) + ((CNPJ[14]-'0') * 2));
