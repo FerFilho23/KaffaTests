@@ -18,9 +18,11 @@ Follow the next setps and copy/paste the commands below to the Terminal:
       
       $ KaffaTests/Exercises1-2/
 
-3.  Compile & Execute
+3.  Compilation & Execute
 
       $ make CNPJ
+      
+The program will be compiled and ready for execution. Just type a CNPJ for validation.
       
 ### Exercise 1: Validate a CNPJ Format.
 
@@ -28,6 +30,12 @@ Given a string, check if it looks like a CNPJ, considering two formats:
 
 1. Formatted: "00.000.000/0000-00"
 2. Numbers only: "00000000000000"
+
+For this exercise, the function "validate_format(char CNPJ[])" checks if the CNPJ has a minimum size of 14 characters containing only numbers or 18 characters (14 numbers) and for separation characters exactly as the format above. In the case the CNPJ does not meet the format requirements an error message will appear:
+
+* FORMAT ERROR: invalid size - in case the CNPJ is not within the 14 to 18 characters size range
+* FORMAT ERROR: letter found - in case the CNPJ is written with a letter
+* 
 
 ### Exercise 2: Validate CNPJ digits
 
