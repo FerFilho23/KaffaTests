@@ -33,15 +33,12 @@ Given a string, check if it looks like a CNPJ, considering two formats:
 
 For this exercise, the function "validate_format(char CNPJ[])" checks if the CNPJ has a minimum size of 14 characters containing only numbers or 18 characters (14 numbers) and for separation characters exactly as the format above. In the case the CNPJ does not meet the format requirements an error message will appear:
 
-* FORMAT ERROR: invalid size - in case the CNPJ is not within the 14 to 18 characters size range
-* FORMAT ERROR: letter found - in case the CNPJ is written with a letter
-* 
+* "FORMAT ERROR: invalid size" - in case the CNPJ is not within the 14 to 18 characters size range
+* FORMAT ERROR: invalid character found" - in case the CNPJ is written with a letter
+* "FORMAT ERROR: invalid separation characters" - in case the separation characters are not as specified
 
 ### Exercise 2: Validate CNPJ digits
 
 Given a string validate if it's a well-formed CNPJ, considering the "check digits" as defined by Receita Federal.
 
-To compile and execute this program the next steps:
-
-1. Clone/Downlod the repository 
-2. Using the terminal go to the repositories "Exercise1-2" folder
+According to Receita Federal, every CNPJ has the last two digits as authentication digits used for validating CNPJ. The function "validate_digits(char CNPJ[])" uses the rules of Receita Federal to calculate the expected last two digits. If the actual digits match the expect ones the CNPJ is valid, otherwise the error message "AUTHENTICATION ERROR: invalid authentication digits" appears.
