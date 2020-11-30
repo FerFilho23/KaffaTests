@@ -1,7 +1,6 @@
 #ifndef FUNCS_H_INCLUDED
 #define FUNCS_H_INCLUDED
 #define MAX 27 // rectagles A to Z
-#define MIN(A,B)
 
 #include <stdio.h>
 #include <stdlib.h>

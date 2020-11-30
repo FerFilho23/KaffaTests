@@ -12,11 +12,11 @@ int intersects(Rectangle A, Rectangle B){
         if (((A.y1 >= B.y1) && (A.y1 <= B.y1+B.height)) || ((B.y1 >= A.y1) && (B.y1 <= A.y1+A.height)))
         {
             printf("intersects(%c, %c) => true\n", A.id, B.id);
-            return 0;
+            return 1;
         }
     }
     printf("intersects(%c, %c) => false\n", A.id, B.id);
-    return 1;
+    return 0;
 }
 
 int areaOfIntersection(Rectangle A, Rectangle B){

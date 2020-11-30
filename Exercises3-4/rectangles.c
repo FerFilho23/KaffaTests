@@ -33,7 +33,7 @@ int main(){
     {
         for (int j = i+1; j < num; j++)
         {   
-            if(!intersects(rect[i], rect[j])){
+            if(intersects(rect[i], rect[j])){
                 areaOfIntersection(rect[i], rect[j]);            
             }
         }
