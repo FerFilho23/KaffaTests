@@ -12,7 +12,7 @@ Follow the next steps and copy/paste the commands below to the Terminal:
 
 1.  Clone the repository
       
-      $  cd git clone https://github.com/FerFilho23/KaffaTests.git
+      $  git clone https://github.com/FerFilho23/KaffaTests.git
    
 2.  Go to the KaffaTests repository and enter the "Exercise1-2" folder
       
