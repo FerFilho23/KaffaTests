@@ -16,15 +16,13 @@ Follow the next steps and copy/paste the commands below to the Terminal:
    
 2.  Go to the KaffaTests repository and enter the "Exercise3-4" folder
       
-      $ KaffaTests/Exercises3-4/
+      $ cd KaffaTests/Exercises3-4/
 
 3.  Compilation & Execution
 
       $ make Rectangles
       
-The program will be compiled and ready for execution. Just type four integers representing the coordinates for each of the two points representing the rectangles. The program uses a struct called "Rectangle" which stores the id, coordinates, width and height of the rectangles being analyzed. The program can compute a maximum of 27 rectangles simultaneously.
-
-![Compile&Execute](https://github.com/FerFilho23/KaffaTests/blob/main/Exercises3-4/img/Compile%26Execute.png)
+The program will be compiled and ready for execution. First type the numbers of triangles to be analyzed, the program can compute a maximum of 27 rectangles simultaneously. Then, for each rectangle, type four integers representing  the coordinates of the bottom left and the top right points. The program uses a struct called "Rectangle" which stores the id, coordinates, width and height of the rectangles being analyzed. 
       
 ### Exercise 3: Test if two rectangles intersect.
 
@@ -34,12 +32,10 @@ NOTE: the points are included in the rectangles and have a dimension of 1 unit; 
 
 For this exercise, the function "intersects(Rectangle A, Reactangle B)" will check if a point of one rectangle is in range of the width/height of the other. If true, the program will return "intersects(A, B) => true", otherwise it will return "intersects(A, B) => false".
 
-![Ex1](https://github.com/FerFilho23/KaffaTests/blob/main/Exercises3-4/img/Ex1.png)
-
 ### Exercise 4: Compute area of intersection between two rectangles.
 
 If the rectangles of the previous exercise intersect, compute the area of intersection. For this exercise the functions "areaOfIntersection(Rectangle A, Rectangle B)", "min(int a, int b)" and "max(int a, int b)" compute the intersection width and height so that the area can be computed bt the following formula:
 
 AreaOfIntersection = Intersection_Width x Intersection_Height.
 
-![Ex2](https://github.com/FerFilho23/KaffaTests/blob/main/Exercises3-4/img/Ex2.png)
+![Ex3-4](https://github.com/FerFilho23/KaffaTests/blob/main/Exercises3-4/img/Ex3-4.png)
