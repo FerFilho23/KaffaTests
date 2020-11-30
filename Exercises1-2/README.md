@@ -1,6 +1,6 @@
 # Exercises 1 & 2
 
-This program contains the answer to both exercise 1 and 2. The structure consists of four files:
+This program contains the answer to both exercises 1 and 2. The structure consists of four files:
 * validate.h - a header file  for the inclusion of libraries, declaration of functions and definition of macros;
 * validate.c - contains the implementation of the functions;
 * cnpj.c -  contains the main code of the program;
@@ -16,7 +16,7 @@ Follow the next steps and copy/paste the commands below to the Terminal:
    
 2.  Go to the KaffaTests repository and enter the "Exercise1-2" folder
       
-      $ KaffaTests/Exercises1-2/
+      $ cd KaffaTests/Exercises1-2/
 
 3.  Compilation & Execution
 
